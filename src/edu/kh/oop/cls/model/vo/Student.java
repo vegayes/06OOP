@@ -13,7 +13,8 @@ public class Student { // 클래스의 선언부
 	
 	
 	/* 필드 구성 <외우기!!> (대괄호는 생략 가능)
-	 *    [ 접근 제한자 ]   	  [예약어]        자료형    	 변수명    [=초기값;]
+	 *    [ 접근 제한자 ]   	  [jdi!12
+	 *    예약어]        자료형    	 변수명    [=초기값;]
 	 *  +    public 		  	    final  		기본 자료형
 	 *  #   protected   	   	   static		 (참조형)
 	 *  ~   (default)			final static	   배열 
