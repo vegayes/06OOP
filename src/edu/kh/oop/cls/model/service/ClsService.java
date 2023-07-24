@@ -1,6 +1,7 @@
 package edu.kh.oop.cls.model.service;
 
 import edu.kh.oop.cls.model.vo.Student;
+import edu.kh.oop.cls.model.vo.User;
 
 //import edu.kh.oop.cls.model.vo.TestVO;
 // 오류 :: The type edu.kh.oop.cls.model.vo.Test() is not visible
@@ -42,8 +43,7 @@ public class ClsService /* extends Student*/{
 		System.out.println(v4);
 		*/
 	}
-	
-	
+		
 	public void ex2() {
 		
 		// static 필드 확인 예제
@@ -64,7 +64,7 @@ public class ClsService /* extends Student*/{
 		System.out.println(Student.schoolName);  // 클래스명 자체에다가 붙음. 
 		
 		
-		Student.schoolName = "KH";
+		Student.schoolName = "KH";  // final 취급하면, 오류남.
 		System.out.println("변경 후 : " + Student.schoolName);  // 클래스명 자체에다가 붙음. 
 	
 		/* static
@@ -75,15 +75,33 @@ public class ClsService /* extends Student*/{
 		 * 그리고, static 영역에 생성된 변수는 어디서든지 공유 가능. (공유)
 		 * 
 		 * 2) 사용 방법 : 클래스명.변수명 
-		 * 
-		 * 
-		 * 
+
 		 */
+
+	}
+	
+	public void ex3() {
+		
+		// 생성자 확인 테스트
+		
+		// Student 객체를 기본생성자를 이용해 생성하고 
+		// 이를 참조하는 참조변수 s1에 대입함.
+		Student s1 = new Student(); 
+						// 기본 생성자
+		
+		// User 기본 생성자를 이용해서 객체 생성
+		User user = new User();
+		
+		
+		// User 객체 필드 초기화 확인
+		System.out.println(user.getUserId());
+		System.out.println(user.getUserPw());
+		System.out.println(user.getUserName());
+		System.out.println(user.getUserAge());
+		System.out.println(user.getUserGender());
 		
 		
 	}
-	
-	
 	
 	
 	
