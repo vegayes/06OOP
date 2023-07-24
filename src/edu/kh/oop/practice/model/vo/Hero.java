@@ -3,11 +3,13 @@ package edu.kh.oop.practice.model.vo;
 public class Hero {
 	
 	private String job ; // 직업 이름
-	private int hp ; // 직업 이름
-	private int mp ; // 직업 이름
-	private char gender ; // 직업 이름
-	private int level ; // 직업 이름
+	private int hp ; // HP
+	private int mp ; // MP
+	private char gender ; // 성별
+	private int level ; // 레벨
 	
+	//생성자 
+	//기본 생성자 단축키 ctrl + space + enter
 	public Hero(){
 
 	}
@@ -19,10 +21,7 @@ public class Hero {
 	
 	public void jump() {
 		
-		System.out.printf("%s의 점프!",job);
-		
-		
-		
+		System.out.printf("%s의 점프!",job);	
 	}
 
 	

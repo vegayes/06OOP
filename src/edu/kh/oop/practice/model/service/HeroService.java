@@ -10,7 +10,7 @@ public class HeroService {
 		Hero hero2 = new Hero();
 		Hero hero3 = new Hero();
 		
-		
+		// 참조변수 명만 다름.
 		hero1.setJob("워리어");
 		hero1.setHp(18000);
 		hero1.setMp(5000);
@@ -22,8 +22,6 @@ public class HeroService {
 		hero2.setMp(25000);
 		hero2.setGender('여');
 		hero2.setLevel(2);
-		
-		
 		
 		hero3.setJob("힐러");
 		hero3.setHp(10000);
@@ -55,7 +53,9 @@ public class HeroService {
 		System.out.println("\n");
 		
 		
-		hero1.setHp(18000-150);
+//		hero1.setHp(18000-150);
+		hero1.setHp(hero1.getHp()-150); 
+		
 		
 		System.out.println("직업 : " +hero1.getJob());
 		System.out.println("hp : " +hero1.getHp());
