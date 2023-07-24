@@ -57,7 +57,7 @@ public class ClsService /* extends Student*/{
 		
 		// 정보출력
 		System.out.println(std1.schoolName);  // schoolName을 public으로 설정하여, 직접 접근이 가능
-							// statice 변수인 것을 알려주기 위해서 옆으로 기울어짐.
+							// static 변수인 것을 알려주기 위해서 옆으로 기울어짐.
 		
 		// schoolName에 노란줄이 뜨는 이유 ==> 제대로 작성을 안해서
 		//  *** static이 붙은 필드(변수)는 '클래스명.변수명' 으로 사용함 ***
@@ -75,7 +75,6 @@ public class ClsService /* extends Student*/{
 		 * 그리고, static 영역에 생성된 변수는 어디서든지 공유 가능. (공유)
 		 * 
 		 * 2) 사용 방법 : 클래스명.변수명 
-
 		 */
 
 	}
@@ -102,6 +101,9 @@ public class ClsService /* extends Student*/{
 		
 		
 	}
+	
+	// 클래스를 만들면, => 기본 생성자, 매개변수 생성자
+	// 접근 제한자 외의 값을 만들기 위해서는 => getter, setter 만들어야 함. 
 	
 	
 	
