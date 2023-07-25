@@ -77,10 +77,5 @@ public class Member {
 		
 		this.memberAge= memberAge;
 	}
-	
-	
-
-	
-	
 
 }
