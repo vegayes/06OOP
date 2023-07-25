@@ -17,7 +17,8 @@ public class ClsRun {
 		
 		
 //		cs1.ex2();
-		cs1.ex3();
+//		cs1.ex3();
+		cs1.ex4();
 		
 		
 	}
