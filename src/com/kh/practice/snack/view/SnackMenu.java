@@ -43,12 +43,12 @@ public class SnackMenu {
 		if( check == 'y' || check == 'Y') {
 			
 			System.out.println(con.confirmData()); 
-		}else if( check == 'n' || check == 'N') {
 			
+		}else if( check == 'n' || check == 'N') {
+			System.out.println("");
 			return;
 		}
 		
 		
 	}
-
 }

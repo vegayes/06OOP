@@ -2,7 +2,7 @@ package edu.kh.oop.method.model.vo;
 
 public class Member {
 	
-	// 필드
+	// 필드 :: 아이디, 비밀번호, 이름, 나이
 		
 	// 아이디 
 	// 비밀번호
@@ -34,8 +34,6 @@ public class Member {
 		this.memberName = memberName ;
 		this.memberAge =  memberAge;
 		
-		
-		//?? 처음에 초기화를 아예 시켜버렸는데도 인식 가능한 이유?
 	}
 
 	

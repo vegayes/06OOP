@@ -22,7 +22,7 @@ public class MemberService {
 
 		int menuNum = 0; // 메뉴 선택용 변수
 
-		// 무조건 한번은 반복
+		// 무조건 한번은 출력
 		do {
 
 			System.out.println("===== 회원 정보 관리 프로그램 =====");
@@ -107,7 +107,7 @@ public class MemberService {
 			// 생성된 객체의 주소를 필드에 있는 memberInfo에 대입
 			memberInfo = new Member(memberId, memberPw, memberName, memberAge); // 위에서 Member 객체 넣을 곳 만들었음.
 
-			return "회원가입 성공!!";
+			return "회원가입 성공!!\n";
 			/*
 			 * 출력 구문 메소드를 호출한곳에서 한번만 쓰고, return을 이용해 전달할 값을 작성
 			 * 
@@ -150,7 +150,7 @@ public class MemberService {
 			// 입력된 아이디, 비밀번호와 같으면 "로그인 성공!"
 			// 아니면, " 아이디 또는 비밀번호가 일치하지 않습니다!"
 			
-			if(memberInfo.getMemberId().equals(memberId) && memberInfo.getMemberPw().equals(memberId) ) {
+			if(memberInfo.getMemberId().equals(memberId) && memberInfo.getMemberPw().equals(memberPw) ) {
 				// 입력받은 memberId와 
 				// memberInfo 필드에서 참조중인 Member객체의 memberId가 같은지 확인
 				
@@ -171,7 +171,7 @@ public class MemberService {
 					}
 				}*/
 				
-				return " 로그인 실패!\n 아이디와 비밀번호 모두 틀렸습니다.\n";
+				return " 로그인 실패!\n 아이디와 비밀번호 다시 확인해주세요.\n";
 			}
 			
 			
@@ -206,7 +206,7 @@ public class MemberService {
 	//회원 정보 수정
 	public int updateMember() {
 		
-		System.out.println("\n***** 회원 정보 조회 ***** ");
+		System.out.println("\n***** 회원 정보 수정 ***** ");
 		
 		// 1) 로그인 여부 판별
 		// 로그인이 되어있지 않으면 -1 반환

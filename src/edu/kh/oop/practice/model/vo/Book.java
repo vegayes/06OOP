@@ -29,9 +29,7 @@ public class Book {
 	 
 	 // 메소드
 	 public String toString() {
-		 
-		 
-		 
+
 		 return title +" / "+ price +" / "+ discountRate +" / "+ author ;		 
 	 }
 

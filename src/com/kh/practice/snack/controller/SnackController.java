@@ -27,11 +27,6 @@ public class SnackController {
 	 
 	public String confirmData() {
 
-		return (snack.getKind() + "(" + snack.getName() + " - " + snack.getFlavor() + ") "+snack.getNumOf()+"개 "+ snack.getPrice()+"원") ;
+		return snack.information(); /*(snack.getKind() + "(" + snack.getName() + " - " + snack.getFlavor() + ") "+snack.getNumOf()+"개 "+ snack.getPrice()+"원") ;*/
 	}
-	
-	
-	
-	
-
 }

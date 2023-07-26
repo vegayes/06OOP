@@ -23,7 +23,6 @@ public class Snack {
 		 this.flavor = flavor;
 		 this.numOf = numOf;
 		 this.price = price;
-		 
 	 }
 	
 	 
